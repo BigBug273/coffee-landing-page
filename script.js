@@ -1,5 +1,5 @@
 function orderCoffee(){
 
-alert("Thanks for choosing BeanCraft Coffee ☕");
+alert("Thank you for choosing BeanCraft Coffee ☕");
 
 }
