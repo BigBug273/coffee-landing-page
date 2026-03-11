@@ -5,25 +5,11 @@ box-sizing:border-box;
 }
 
 body{
+
 font-family:Poppins;
-color:#333;
 background:#fafafa;
-}
+color:#333;
 
-section{
-padding:100px 10%;
-text-align:center;
-}
-
-h1{
-font-family:Playfair Display;
-font-size:60px;
-}
-
-h2{
-font-family:Playfair Display;
-font-size:40px;
-margin-bottom:40px;
 }
 
 
@@ -50,48 +36,84 @@ position:relative;
 
 }
 
+
 .hero-content{
-z-index:2;
+
+text-align:center;
+max-width:700px;
+
 }
+
+
+.headline{
+
+font-family:"Playfair Display";
+font-size:60px;
+
+}
+
+
+/* CTA */
 
 .cta-main{
 
 padding:18px 45px;
+
 background:#c59d5f;
+
 border:none;
+
 color:white;
+
 font-size:18px;
+
 border-radius:40px;
+
 cursor:pointer;
 
 transition:0.3s;
 
 }
 
+
 .cta-main:hover{
-transform:scale(1.1);
+
 background:#a3783f;
+transform:scale(1.1);
+
 }
 
 
 /* BENEFITS */
 
 .benefits{
+
+padding:100px 10%;
+
+text-align:center;
+
 background:#f7f7f7;
+
 }
+
 
 .benefit-grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:40px;
 
 }
 
+
 .benefit-card{
 
 background:white;
+
 padding:40px;
+
 border-radius:20px;
 
 box-shadow:0 20px 40px rgba(0,0,0,0.1);
@@ -100,29 +122,40 @@ transition:0.3s;
 
 }
 
+
 .benefit-card:hover{
+
 transform:translateY(-10px);
-}
 
-.icon{
-font-size:40px;
-margin-bottom:15px;
 }
 
 
-/* COFFEE CARDS */
+/* MENU */
 
-.coffee-grid{
+.menu{
+
+padding:100px 10%;
+
+text-align:center;
+
+}
+
+
+.menu-grid{
 
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:30px;
 
 }
 
-.coffee-card{
+
+.menu-card{
 
 background:white;
+
 border-radius:15px;
 
 overflow:hidden;
@@ -133,27 +166,21 @@ transition:0.3s;
 
 }
 
-.coffee-card:hover{
+
+.menu-card:hover{
+
 transform:scale(1.05);
+
 }
 
-.coffee-card img{
+
+.menu-card img{
+
 width:100%;
+
 height:220px;
+
 object-fit:cover;
-}
-
-.coffee-card button{
-
-margin:20px;
-padding:12px 25px;
-
-background:#c59d5f;
-border:none;
-color:white;
-
-border-radius:25px;
-cursor:pointer;
 
 }
 
@@ -163,46 +190,36 @@ cursor:pointer;
 .testimonials{
 
 background:#2b1a10;
+
 color:white;
 
+padding:100px 10%;
+
 }
+
 
 .testimonial-grid{
 
 display:flex;
+
 gap:30px;
-justify-content:center;
+
 flex-wrap:wrap;
 
+justify-content:center;
+
 }
+
 
 .testimonial{
 
 background:rgba(255,255,255,0.1);
+
 padding:30px;
+
 border-radius:15px;
+
 max-width:260px;
-
-}
-
-
-/* CTA */
-
-.cta{
-
-background:#c59d5f;
-color:white;
-
-}
-
-.cta button{
-
-padding:18px 40px;
-background:white;
-color:#333;
-border:none;
-border-radius:40px;
-cursor:pointer;
 
 }
 
@@ -211,20 +228,21 @@ cursor:pointer;
 
 .faq{
 
+padding:100px 10%;
+
 background:#eee;
 
 }
 
-.faq-item{
-margin-bottom:20px;
-}
 
 .faq-question{
 
 width:100%;
+
 padding:18px;
 
 background:white;
+
 border:none;
 
 font-size:18px;
@@ -233,36 +251,13 @@ cursor:pointer;
 
 }
 
+
 .faq-answer{
 
 display:none;
-background:white;
+
 padding:20px;
 
-}
-
-
-/* FOOTER */
-
-footer{
-
-background:#111;
-color:white;
-padding:30px;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-h1{
-font-size:40px;
-}
-
-section{
-padding:70px 6%;
-}
+background:white;
 
 }
