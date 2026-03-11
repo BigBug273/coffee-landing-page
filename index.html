@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,48 +9,35 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+
+<!-- HERO -->
+
 <section class="hero">
+
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<h1>Premium Coffee<br>Crafted For Real Coffee Lovers</h1>
+<h1>Experience Coffee<br>Like Never Before</h1>
 
-<p>Fresh roasted beans. Rich flavor. The perfect cup every morning.</p>
+<p>Fresh roasted artisan coffee delivered to your cup.</p>
 
-<button onclick="orderCoffee()">Order Your First Cup</button>
+<button class="cta-main" onclick="orderCoffee()">
+Order Your First Cup
+</button>
 
-</div>
+<div class="steam">
 
-</section>
+<span></span>
+<span></span>
+<span></span>
 
-
-<!-- FEATURES -->
-<section class="features">
-
-<h2>Why Coffee Lovers Choose BeanCraft</h2>
-
-<div class="feature-grid">
-
-<div class="feature">
-<h3>☕ Premium Arabica Beans</h3>
-<p>Sourced from the finest coffee farms around the world.</p>
-</div>
-
-<div class="feature">
-<h3>🔥 Fresh Daily Roasting</h3>
-<p>Every batch roasted daily for maximum flavor and aroma.</p>
-</div>
-
-<div class="feature">
-<h3>🌱 Sustainable Farming</h3>
-<p>Ethically sourced beans supporting coffee farmers.</p>
 </div>
 
 </div>
@@ -58,34 +45,150 @@
 </section>
 
 
-<!-- FEATURE IMAGE -->
+
+<!-- BENEFITS -->
+
+<section class="benefits">
+
+<h2>Why BeanCraft Coffee?</h2>
+
+<div class="benefit-grid">
+
+<div class="benefit-card">
+
+<div class="icon">☕</div>
+
+<h3>Premium Beans</h3>
+
+<p>
+Hand-selected Arabica beans from the best farms.
+Each batch is chosen for flavor, aroma, and quality.
+</p>
+
+</div>
+
+
+<div class="benefit-card">
+
+<div class="icon">🔥</div>
+
+<h3>Fresh Roasting</h3>
+
+<p>
+Our beans are roasted daily to ensure maximum flavor
+and unmatched freshness.
+</p>
+
+</div>
+
+
+<div class="benefit-card">
+
+<div class="icon">🌱</div>
+
+<h3>Sustainable Farming</h3>
+
+<p>
+Ethically sourced beans supporting farmers and
+sustainable agriculture practices.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PRODUCT SHOWCASE -->
+
 <section class="coffee-showcase">
+
+<h2>Our Signature Coffee</h2>
+
+<div class="coffee-grid">
+
+<div class="coffee-card">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+
+<h3>Espresso</h3>
+
+<p>Strong bold flavor for true coffee lovers.</p>
+
+<button onclick="orderCoffee()">Order</button>
+
+</div>
+
+
+<div class="coffee-card">
 
 <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
 
+<h3>Cappuccino</h3>
+
+<p>Perfect balance of foam and espresso.</p>
+
+<button onclick="orderCoffee()">Order</button>
+
+</div>
+
+
+<div class="coffee-card">
+
+<img src="https://images.unsplash.com/photo-1521305916504-4a1121188589">
+
+<h3>Latte</h3>
+
+<p>Smooth creamy milk with rich espresso.</p>
+
+<button onclick="orderCoffee()">Order</button>
+
+</div>
+
+</div>
+
 </section>
+
 
 
 <!-- SOCIAL PROOF -->
-<section class="testimonial">
 
-<h2>What Our Customers Say</h2>
+<section class="testimonials">
 
-<div class="reviews">
+<h2>Loved By Coffee Fans</h2>
 
-<div class="review">
-⭐️⭐️⭐️⭐️⭐️
-<p>"Absolutely the best coffee I've ever had!"</p>
+<div class="testimonial-grid">
+
+<div class="testimonial">
+
+<p>
+“Best coffee I've had in years. The flavor is incredible.”
+</p>
+
+<strong>— Sarah M.</strong>
+
 </div>
 
-<div class="review">
-⭐️⭐️⭐️⭐️⭐️
-<p>"The aroma alone is incredible."</p>
+<div class="testimonial">
+
+<p>
+“I never start my day without BeanCraft.”
+</p>
+
+<strong>— Daniel R.</strong>
+
 </div>
 
-<div class="review">
-⭐️⭐️⭐️⭐️⭐️
-<p>"My mornings are incomplete without BeanCraft."</p>
+<div class="testimonial">
+
+<p>
+“The aroma alone makes my morning.”
+</p>
+
+<strong>— Chloe T.</strong>
+
 </div>
 
 </div>
@@ -93,43 +196,74 @@
 </section>
 
 
-<!-- CTA SECTION -->
+
+<!-- CTA -->
+
 <section class="cta">
 
-<h2>Start Your Perfect Coffee Morning</h2>
+<h2>Start Your Perfect Morning</h2>
 
-<button onclick="orderCoffee()">Get Your Coffee Now</button>
+<p>Join thousands of happy coffee lovers.</p>
+
+<button onclick="orderCoffee()">Get Your Coffee</button>
 
 </section>
+
 
 
 <!-- FAQ -->
+
 <section class="faq">
 
 <h2>Frequently Asked Questions</h2>
 
 <div class="faq-item">
 
-<h3>Where do your beans come from?</h3>
-<p>We source premium beans from Brazil, Colombia, and Ethiopia.</p>
+<button class="faq-question">
+Where do your beans come from?
+</button>
+
+<div class="faq-answer">
+<p>
+We source beans from Brazil, Colombia,
+and Ethiopia for the best quality.
+</p>
+</div>
 
 </div>
 
+
 <div class="faq-item">
 
-<h3>Do you roast coffee daily?</h3>
-<p>Yes! Our beans are roasted fresh every day.</p>
+<button class="faq-question">
+Do you roast coffee daily?
+</button>
+
+<div class="faq-answer">
+<p>
+Yes. Fresh roasting ensures the best taste.
+</p>
+</div>
 
 </div>
 
+
 <div class="faq-item">
 
-<h3>Is your coffee organic?</h3>
-<p>Yes, our beans are ethically sourced and organically grown.</p>
+<button class="faq-question">
+Do you ship internationally?
+</button>
+
+<div class="faq-answer">
+<p>
+Yes we ship worldwide.
+</p>
+</div>
 
 </div>
 
 </section>
+
 
 
 <footer>
@@ -137,6 +271,7 @@
 <p>© 2026 BeanCraft Coffee</p>
 
 </footer>
+
 
 <script src="script.js"></script>
 
