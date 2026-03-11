@@ -5,25 +5,29 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins',sans-serif;
+font-family:Poppins;
 color:#333;
+background:#fafafa;
 }
 
 section{
-padding:90px 10%;
+padding:100px 10%;
 text-align:center;
 }
 
 h1{
-font-family:'Playfair Display',serif;
+font-family:Playfair Display;
 font-size:60px;
 }
 
 h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
+font-family:Playfair Display;
+font-size:40px;
 margin-bottom:40px;
 }
+
+
+/* HERO */
 
 .hero{
 
@@ -42,20 +46,21 @@ justify-content:center;
 
 color:white;
 
+position:relative;
+
 }
 
-.hero p{
-margin:20px 0;
-font-size:18px;
+.hero-content{
+z-index:2;
 }
 
-button{
+.cta-main{
 
-padding:16px 40px;
+padding:18px 45px;
 background:#c59d5f;
 border:none;
 color:white;
-font-size:16px;
+font-size:18px;
 border-radius:40px;
 cursor:pointer;
 
@@ -63,59 +68,106 @@ transition:0.3s;
 
 }
 
-button:hover{
-
+.cta-main:hover{
+transform:scale(1.1);
 background:#a3783f;
-transform:scale(1.05);
-
 }
 
-.features{
-background:#fafafa;
+
+/* BENEFITS */
+
+.benefits{
+background:#f7f7f7;
 }
 
-.feature-grid{
+.benefit-grid{
 
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+gap:40px;
 
 }
 
-.feature{
+.benefit-card{
 
 background:white;
-padding:35px;
-border-radius:15px;
-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+padding:40px;
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
 
 transition:0.3s;
 
 }
 
-.feature:hover{
-
+.benefit-card:hover{
 transform:translateY(-10px);
+}
+
+.icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+
+/* COFFEE CARDS */
+
+.coffee-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 
 }
 
-.coffee-showcase img{
+.coffee-card{
 
-width:80%;
-max-width:700px;
+background:white;
 border-radius:15px;
-box-shadow:0 20px 40px rgba(0,0,0,0.2);
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+
+transition:0.3s;
 
 }
 
-.testimonial{
+.coffee-card:hover{
+transform:scale(1.05);
+}
+
+.coffee-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.coffee-card button{
+
+margin:20px;
+padding:12px 25px;
+
+background:#c59d5f;
+border:none;
+color:white;
+
+border-radius:25px;
+cursor:pointer;
+
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials{
 
 background:#2b1a10;
 color:white;
 
 }
 
-.reviews{
+.testimonial-grid{
 
 display:flex;
 gap:30px;
@@ -124,14 +176,17 @@ flex-wrap:wrap;
 
 }
 
-.review{
+.testimonial{
 
-max-width:250px;
 background:rgba(255,255,255,0.1);
-padding:25px;
-border-radius:10px;
+padding:30px;
+border-radius:15px;
+max-width:260px;
 
 }
+
+
+/* CTA */
 
 .cta{
 
@@ -140,29 +195,67 @@ color:white;
 
 }
 
+.cta button{
+
+padding:18px 40px;
+background:white;
+color:#333;
+border:none;
+border-radius:40px;
+cursor:pointer;
+
+}
+
+
+/* FAQ */
+
 .faq{
 
-background:#f4f4f4;
+background:#eee;
 
 }
 
 .faq-item{
+margin-bottom:20px;
+}
 
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
+.faq-question{
+
+width:100%;
+padding:18px;
+
+background:white;
+border:none;
+
+font-size:18px;
+
+cursor:pointer;
 
 }
+
+.faq-answer{
+
+display:none;
+background:white;
+padding:20px;
+
+}
+
+
+/* FOOTER */
 
 footer{
 
 background:#111;
 color:white;
-padding:25px;
+padding:30px;
 
 }
 
-@media (max-width:768px){
+
+/* MOBILE */
+
+@media(max-width:768px){
 
 h1{
 font-size:40px;
@@ -170,11 +263,6 @@ font-size:40px;
 
 section{
 padding:70px 6%;
-}
-
-.reviews{
-flex-direction:column;
-align-items:center;
 }
 
 }
