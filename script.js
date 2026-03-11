@@ -1,6 +1,6 @@
 function orderCoffee(){
 
-alert("Thanks for choosing BeanCraft Coffee ☕");
+alert("Thank you for choosing BeanCraft Coffee ☕");
 
 }
 
@@ -9,16 +9,21 @@ alert("Thanks for choosing BeanCraft Coffee ☕");
 
 const questions = document.querySelectorAll(".faq-question")
 
-questions.forEach(q=>{
+questions.forEach(question => {
 
-q.addEventListener("click",()=>{
+question.addEventListener("click", () => {
 
-const answer = q.nextElementSibling
+const answer = question.nextElementSibling
 
-answer.style.display =
-answer.style.display === "block"
-? "none"
-: "block"
+if(answer.style.display === "block"){
+
+answer.style.display = "none"
+
+}else{
+
+answer.style.display = "block"
+
+}
 
 })
 
