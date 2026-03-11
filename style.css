@@ -2,128 +2,134 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
+font-family:'Poppins',sans-serif;
 color:#333;
-line-height:1.6;
 }
 
 section{
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
 }
 
 h1{
+font-family:'Playfair Display',serif;
 font-size:60px;
 }
 
 h2{
-font-size:36px;
+font-family:'Playfair Display',serif;
+font-size:38px;
 margin-bottom:40px;
 }
 
 .hero{
+
 height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
 
 background:
-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
 url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb");
 
 background-size:cover;
 background-position:center;
 
+display:flex;
+align-items:center;
+justify-content:center;
+
 color:white;
+
 }
 
 .hero p{
 margin:20px 0;
-font-size:20px;
+font-size:18px;
 }
 
 button{
 
-padding:15px 35px;
+padding:16px 40px;
 background:#c59d5f;
 border:none;
 color:white;
 font-size:16px;
-border-radius:30px;
+border-radius:40px;
 cursor:pointer;
 
 transition:0.3s;
+
 }
 
 button:hover{
 
-background:#a57c44;
+background:#a3783f;
 transform:scale(1.05);
 
 }
 
 .features{
-background:#f8f8f8;
+background:#fafafa;
 }
 
-.grid{
+.feature-grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 
 }
 
-.card{
+.feature{
 
 background:white;
-padding:30px;
+padding:35px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
 
 transition:0.3s;
 
 }
 
-.card:hover{
+.feature:hover{
 
 transform:translateY(-10px);
 
 }
 
-.menu img{
+.coffee-showcase img{
 
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
-
-}
-
-.drink{
-
-background:white;
-padding:20px;
+width:80%;
+max-width:700px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-
-transition:0.3s;
-
-}
-
-.drink:hover{
-
-transform:scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
 
 }
 
 .testimonial{
 
-background:#2d1b0f;
+background:#2b1a10;
 color:white;
+
+}
+
+.reviews{
+
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+
+}
+
+.review{
+
+max-width:250px;
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:10px;
 
 }
 
@@ -134,11 +140,25 @@ color:white;
 
 }
 
+.faq{
+
+background:#f4f4f4;
+
+}
+
+.faq-item{
+
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+
+}
+
 footer{
 
 background:#111;
 color:white;
-padding:30px;
+padding:25px;
 
 }
 
@@ -149,7 +169,12 @@ font-size:40px;
 }
 
 section{
-padding:60px 6%;
+padding:70px 6%;
+}
+
+.reviews{
+flex-direction:column;
+align-items:center;
 }
 
 }
